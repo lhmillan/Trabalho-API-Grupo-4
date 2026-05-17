@@ -1,29 +1,31 @@
 package br.com.serratec.trab_grup.model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.validation.constraints.NotBlank;
+import java.util.List;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
+@Entity
 public class Medico extends Pessoa{
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
 	@NotBlank(message = "Preencha o crm")
+	@Size(max = 14, message = "Maximo de apenas 14 digitos")
 	private String crm;
+	@OneToMany(mappedBy = "medico")
+	private List<Consulta> consultas;
 	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
 	public String getCrm() {
 		return crm;
 	}
 	public void setCrm(String crm) {
 		this.crm = crm;
 	}
+	public List<Consulta> getConsultas() {
+		return consultas;
+	}
+	
+	
 	
 }

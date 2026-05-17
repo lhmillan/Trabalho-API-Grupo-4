@@ -1,31 +1,36 @@
 package br.com.serratec.trab_grup.model;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.Inheritance;
+import jakarta.persistence.InheritanceType;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 
-@MappedSuperclass
+@Entity
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public abstract class Pessoa {
 	
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long codigo;
+	protected Long codigo;
 	
 	@NotBlank(message = "Preencha o nome") 
-	@Max(value = 60, message = "Tamanho maximo de 60 char")
-	private String nome;
+	//@Max(value = 60, message = "Tamanho maximo de 60 char")
+	@Size(max = 60, message = "Tamanho maximo de 60 char")
+	protected String nome;
 	@NotBlank(message = "Preencha o nome")
 	@Email(message = "Email invalido")
-	private String email;
-	@Max(value = 11)
+	protected String email;
+	//nao usar  @Max(value = 11) pois aceita soemnte tipos numericos
+	@Size(max=11, message = "Maximo de apenas 11 digitos")
 	@Pattern(regexp = "^\\d{10,11}$", message = "Apenas numeros")
-	private String telefone;
+	protected String telefone;
 	
 	public Long getCodigo() {
 		return codigo;

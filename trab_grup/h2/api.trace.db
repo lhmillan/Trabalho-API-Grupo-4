@@ -1,0 +1,111 @@
+2026-05-17 17:50:12.205678-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]MEDICO_CODIGO"; expected "MERGE"; SQL statement:
+MEDICO_CODIGO [42001-240]
+2026-05-17 17:54:55.191914-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA" already exists; SQL statement:
+create global temporary table HTE_pessoa(rn_ integer not null, codigo bigint, telefone varchar(11), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:54:55.192953-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA2" already exists; SQL statement:
+create global temporary table HTE_pessoa2(rn_ integer not null, codigo bigint, telefone varchar(11), cpf varchar(14), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:54:55.193942-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA1" already exists; SQL statement:
+create global temporary table HTE_pessoa1(rn_ integer not null, codigo bigint, telefone varchar(11), class varchar(31) not null, nome varchar(60), crm varchar(255), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:54:55.193942-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_CONSULTA" already exists; SQL statement:
+create global temporary table HTE_consulta(dataConsulta date, horaConsulta time(0), rn_ integer not null, id bigint, medico_codigo bigint, paciente_codigo bigint, status enum ('AGUARDANDO','ATENDIDO','EM_ATENDIMENTO'), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:56:24.599971-03:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA" already exists; SQL statement:
+create global temporary table HTE_pessoa(rn_ integer not null, codigo bigint, telefone varchar(11), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:56:24.599971-03:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA2" already exists; SQL statement:
+create global temporary table HTE_pessoa2(rn_ integer not null, codigo bigint, telefone varchar(11), cpf varchar(14), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:56:24.600977-03:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA1" already exists; SQL statement:
+create global temporary table HTE_pessoa1(rn_ integer not null, codigo bigint, telefone varchar(11), class varchar(31) not null, nome varchar(60), crm varchar(255), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:56:24.600977-03:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_CONSULTA" already exists; SQL statement:
+create global temporary table HTE_consulta(dataConsulta date, horaConsulta time(0), rn_ integer not null, id bigint, medico_codigo bigint, paciente_codigo bigint, status enum ('AGUARDANDO','ATENDIDO','EM_ATENDIMENTO'), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:56:48.542352-03:00 jdbc[34]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA" already exists; SQL statement:
+create global temporary table HTE_pessoa(rn_ integer not null, codigo bigint, telefone varchar(11), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:56:48.543351-03:00 jdbc[34]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA2" already exists; SQL statement:
+create global temporary table HTE_pessoa2(rn_ integer not null, codigo bigint, telefone varchar(11), cpf varchar(14), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:56:48.543351-03:00 jdbc[34]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA1" already exists; SQL statement:
+create global temporary table HTE_pessoa1(rn_ integer not null, codigo bigint, telefone varchar(11), class varchar(31) not null, nome varchar(60), crm varchar(255), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:56:48.544352-03:00 jdbc[34]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_CONSULTA" already exists; SQL statement:
+create global temporary table HTE_consulta(dataConsulta date, horaConsulta time(0), rn_ integer not null, id bigint, medico_codigo bigint, paciente_codigo bigint, status enum ('AGUARDANDO','ATENDIDO','EM_ATENDIMENTO'), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:56:51.346207-03:00 jdbc[44]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA" already exists; SQL statement:
+create global temporary table HTE_pessoa(rn_ integer not null, codigo bigint, telefone varchar(11), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:56:51.347207-03:00 jdbc[44]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA2" already exists; SQL statement:
+create global temporary table HTE_pessoa2(rn_ integer not null, codigo bigint, telefone varchar(11), cpf varchar(14), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:56:51.347207-03:00 jdbc[44]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA1" already exists; SQL statement:
+create global temporary table HTE_pessoa1(rn_ integer not null, codigo bigint, telefone varchar(11), class varchar(31) not null, nome varchar(60), crm varchar(255), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:56:51.348209-03:00 jdbc[44]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_CONSULTA" already exists; SQL statement:
+create global temporary table HTE_consulta(dataConsulta date, horaConsulta time(0), rn_ integer not null, id bigint, medico_codigo bigint, paciente_codigo bigint, status enum ('AGUARDANDO','ATENDIDO','EM_ATENDIMENTO'), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:58:57.950957-03:00 jdbc[54]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA" already exists; SQL statement:
+create global temporary table HTE_pessoa(rn_ integer not null, codigo bigint, telefone varchar(11), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:58:57.951957-03:00 jdbc[54]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA2" already exists; SQL statement:
+create global temporary table HTE_pessoa2(rn_ integer not null, codigo bigint, telefone varchar(11), cpf varchar(14), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:58:57.952956-03:00 jdbc[54]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA1" already exists; SQL statement:
+create global temporary table HTE_pessoa1(rn_ integer not null, codigo bigint, telefone varchar(11), class varchar(31) not null, nome varchar(60), crm varchar(255), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 17:58:57.953957-03:00 jdbc[54]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_CONSULTA" already exists; SQL statement:
+create global temporary table HTE_consulta(dataConsulta date, horaConsulta time(0), rn_ integer not null, id bigint, medico_codigo bigint, paciente_codigo bigint, status enum ('AGUARDANDO','ATENDIDO','EM_ATENDIMENTO'), primary key (rn_)) transactional [42101-240]
+2026-05-17 18:00:35.349312-03:00 jdbc[64]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA" already exists; SQL statement:
+create global temporary table HTE_pessoa(rn_ integer not null, codigo bigint, telefone varchar(11), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 18:00:35.349312-03:00 jdbc[64]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA2" already exists; SQL statement:
+create global temporary table HTE_pessoa2(rn_ integer not null, codigo bigint, telefone varchar(11), cpf varchar(14), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 18:00:35.349312-03:00 jdbc[64]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA1" already exists; SQL statement:
+create global temporary table HTE_pessoa1(rn_ integer not null, codigo bigint, telefone varchar(11), crm varchar(14), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 18:00:35.350527-03:00 jdbc[64]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_CONSULTA" already exists; SQL statement:
+create global temporary table HTE_consulta(dataConsulta date, horaConsulta time(0), rn_ integer not null, id bigint, medico_codigo bigint, paciente_codigo bigint, status enum ('AGUARDANDO','ATENDIDO','EM_ATENDIMENTO'), primary key (rn_)) transactional [42101-240]
+2026-05-17 18:10:54.055647-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA" already exists; SQL statement:
+create global temporary table HTE_pessoa(rn_ integer not null, codigo bigint, telefone varchar(11), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 18:10:54.059147-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA2" already exists; SQL statement:
+create global temporary table HTE_pessoa2(rn_ integer not null, codigo bigint, telefone varchar(11), cpf varchar(14), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 18:10:54.059147-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PESSOA1" already exists; SQL statement:
+create global temporary table HTE_pessoa1(rn_ integer not null, codigo bigint, telefone varchar(11), crm varchar(14), class varchar(31) not null, nome varchar(60), email varchar(255), primary key (rn_)) transactional [42101-240]
+2026-05-17 18:10:54.060153-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_CONSULTA" already exists; SQL statement:
+create global temporary table HTE_consulta(dataConsulta date, horaConsulta time(0), rn_ integer not null, id bigint, medico_codigo bigint, paciente_codigo bigint, status enum ('AGUARDANDO','ATENDIDO','EM_ATENDIMENTO'), primary key (rn_)) transactional [42101-240]
+2026-05-17 18:14:43.656269-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSULAS" not found; SQL statement:
+select * from consulas [42102-240]
+2026-05-17 18:14:49.760255-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CONSULTAS" not found; SQL statement:
+select * from consultas [42102-240]
+2026-05-17 18:17:53.021395-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEDICO" not found; SQL statement:
+SELECT * FROM MEDICO [42102-240]
+2026-05-17 18:17:55.476930-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEDICO" not found; SQL statement:
+SELECT * FROM MEDICO [42102-240]
+2026-05-17 18:17:58.576257-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEDICO" not found; SQL statement:
+SELECT * FROM MEDICO [42102-240]
+2026-05-17 18:18:03.760146-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PACIENTE" not found; SQL statement:
+SELECT * FROM PACIENTE [42102-240]
+2026-05-17 18:18:04.895866-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PACIENTES" not found; SQL statement:
+SELECT * FROM PACIENTES [42102-240]
+2026-05-17 18:18:19.080931-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEDICO" not found; SQL statement:
+SELECT * FROM Medico [42102-240]

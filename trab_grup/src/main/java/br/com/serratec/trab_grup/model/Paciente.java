@@ -1,34 +1,31 @@
 package br.com.serratec.trab_grup.model;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.validation.constraints.Max;
+import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 @Entity
 public class Paciente extends Pessoa {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long codigo;
 	//@CPF(message = "cpf invalido")
 	@NotBlank(message = "Preencha o CPF")
-	@Max(value = 14)
+	@Size(max = 14, message = "Deve ser menor que 14 digitos")
 	private String cpf;
 	
-	public Long getCodigo() {
-		return codigo;
-	}
-	public void setCodigo(Long codigo) {
-		this.codigo = codigo;
-	}
+	@OneToMany(mappedBy = "paciente")
+	private List<Consulta> consultas;
+	
 	public String getCpf() {
 		return cpf;
 	}
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+	public List<Consulta> getConsultas() {
+		return consultas;
 	}
 	
 	
