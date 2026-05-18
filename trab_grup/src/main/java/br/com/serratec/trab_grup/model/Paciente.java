@@ -10,6 +10,8 @@ import jakarta.validation.constraints.Size;
 @Entity
 public class Paciente extends Pessoa {
 	
+	
+	
 	//@CPF(message = "cpf invalido")
 	@NotBlank(message = "Preencha o CPF")
 	@Size(max = 14, message = "Deve ser menor que 14 digitos")

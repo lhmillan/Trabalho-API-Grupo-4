@@ -13,6 +13,9 @@ public class Medico extends Pessoa{
 	@NotBlank(message = "Preencha o crm")
 	@Size(max = 14, message = "Maximo de apenas 14 digitos")
 	private String crm;
+	
+	private String especialidade;
+	
 	@OneToMany(mappedBy = "medico")
 	private List<Consulta> consultas;
 	
@@ -22,6 +25,15 @@ public class Medico extends Pessoa{
 	public void setCrm(String crm) {
 		this.crm = crm;
 	}
+	
+	public String getEspecialidade() {
+		return especialidade;
+	}
+	
+	public void setEspecialidade(String especialidade) {
+		this.especialidade = especialidade;
+	}
+	
 	public List<Consulta> getConsultas() {
 		return consultas;
 	}
