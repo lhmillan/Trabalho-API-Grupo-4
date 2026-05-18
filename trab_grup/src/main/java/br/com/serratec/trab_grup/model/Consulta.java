@@ -3,6 +3,7 @@ package br.com.serratec.trab_grup.model;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import br.com.serratec.trab_grup.enums.Status;
@@ -21,8 +22,9 @@ public class Consulta {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	private LocalDate dataConsulta;
-	private LocalTime horaConsulta;
+	private LocalDate dataConsulta = LocalDate.now();;
+	@JsonFormat(pattern = "HH:mm:ss")
+	private LocalTime horaConsulta = LocalTime.now();
 	@Enumerated(EnumType.STRING)
 	private Status status;
 	
@@ -44,15 +46,11 @@ public class Consulta {
 	public LocalDate getDataConsulta() {
 		return dataConsulta;
 	}
-	public void setDataConsulta(LocalDate dataConsulta) {
-		this.dataConsulta = dataConsulta;
-	}
+
 	public LocalTime getHoraConsulta() {
 		return horaConsulta;
 	}
-	public void setHoraConsulta(LocalTime horaConsulta) {
-		this.horaConsulta = horaConsulta;
-	}
+
 	public Status getStatus() {
 		return status;
 	}
